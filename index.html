@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="temperature-converter">
+            <div class="time">
+                <p>9:47 AM</p>
+                <div>
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-battery-three-quarters"></i>
+                </div>
+            </div>
+            <h2 class="title">Temperature Converter</h2>
+            
+            <div class="result">
+                <span class="result-heading">Result(celcius)</span>
+                <h2 class="celcius-value">1</h2>
+            </div>
+
+            <div class="degree-type">
+                <div class="degree-field">
+                    <label for="degree">Degree</label>
+                    <input type="number" name="degree" id="degree">
+                </div>
+                 <div class="temp-field">
+                    <label for="temp-type">Type</label>
+                    <select name="temperature" id="temp-type" autocomplete="on">
+                        <option value="fahrenheit" id="fahrenheit">fahrenheit</option>
+                        <option value="kelvin" id="kelvin">kelvin</option>
+                    </select>
+                 </div>
+            </div>
+
+            <button id="convert-btn">Convert</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
